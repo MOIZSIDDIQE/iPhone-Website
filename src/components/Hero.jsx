@@ -39,7 +39,17 @@ const Hero = () => {
   }, [])
 
   return (
-    
+    <section className='w-full nav-height bg-black relative'>
+      <div className="w-full h-5/6 flex-col flex-center">
+        <p id='hero' className="hero-title">Iphone 15 pro</p>
+        <div className="md:w-10/12 w-9/12">
+          <video className='pointer-events-none'
+            autoPlay muted playsInline={true} key={VideoSrc}>
+            <source src={VideoSrc} type='video/mp4' />
+          </video>
+        </div>
+      </div>
+    </section>
   )
 }
 
