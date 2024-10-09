@@ -11,7 +11,16 @@ const Highlights = () => {
   },[])
 
   return (
-    
+    <section id='highlights' className="w-screen h-full overflow-hidden common-padding bg-zinc">
+      <div className="screen-max-width">
+        <div className="mb-12 w-full md:flex  items-end justify-between">
+          <h1 id='title' className='section-heading'>
+            Get the Highlights
+          </h1>
+        </div>
+      <VideoCarousel/>
+      </div>
+    </section>
   )
 }
 
