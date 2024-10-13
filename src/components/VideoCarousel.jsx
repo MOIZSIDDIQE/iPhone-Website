@@ -17,6 +17,10 @@ const VideoCarousel = () => {
     isPlaying: false,
   });
 
+  const [LoadedData, setLoadedData] = useState([]);
+
+  const { isEnd, startPlaying, videoId, isLastVideo, isPlaying } = Video;
+
 
 };
 
