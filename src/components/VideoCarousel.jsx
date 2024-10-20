@@ -28,6 +28,15 @@ const VideoCarousel = () => {
       ease:'power2.inOut'
     })
 
+    gsap.to("#video", {
+      scrollTrigger: {
+        trigger: "#video",
+        toggleActions: "restart none none none",
+      },
+      onComplete: () => {
+        setVideo((pre) => ({ ...pre, startPlaying: true, isPlaying: true }));
+      },
+    });
   }, [isEnd, videoId]);
 
 };
