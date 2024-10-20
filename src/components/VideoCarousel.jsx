@@ -21,6 +21,14 @@ const VideoCarousel = () => {
 
   const { isEnd, startPlaying, videoId, isLastVideo, isPlaying } = Video;
 
+  useGSAP(() => {
+    gsap.to('#slider' ,{
+      transform:`translateX(${-100 * videoId}%)`,
+      duration:2,
+      ease:'power2.inOut'
+    })
+
+  }, [isEnd, videoId]);
 
 };
 
